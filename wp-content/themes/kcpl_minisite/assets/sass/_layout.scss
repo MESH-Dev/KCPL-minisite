@@ -48,10 +48,12 @@ header {
 
 		.with_frm_style .frm_submit input[type=submit], .with_frm_style .frm_submit input[type=button], .frm_form_submit_style, .with_frm_style.frm_login_form input[type=submit] { text-align: center; padding: 3px 30px; border: none; color: #ffffff; border-radius: .5em; background: $red; font-size: 18px;font-family: $nimbus-c; text-transform: uppercase; letter-spacing: 0.09em; font-weight: 700; letter-spacing: 0.07em; float: right; margin-right: 25px; }
 
-		.with_frm_style .frm_radio label, .with_frm_style .frm_checkbox label { font-family: $nimbus; font-size: 10px; line-height:10px; text-transform: uppercase; font-weight: 700; }
+		.with_frm_style .frm_radio label, .with_frm_style .frm_checkbox label { font-family: $nimbus; font-size: 10px; line-height:10px; text-transform: uppercase; font-weight: 700; color: $d-grey; }
 		.with_frm_style .frm_radio { width: 80%; }
 
 		.with_frm_style p.submit, .with_frm_style div.frm_submit, .with_frm_style.frm_login_form p.login-submit { position: relative; float: right; }
+
+		#frm_field_14_container { margin-top: 50px; }
 
 		@media only screen and (min-width: 768px) {
 
@@ -76,6 +78,15 @@ header {
 
 		}
 	}
+
+	.contact-form-count { display: block; display: block; position: absolute; bottom: 105px; left: 22px; font-size: 10px; text-transform: uppercase; font-weight: 700; font-family: $nimbus; line-height: 10px; }
+	.contact-form-count {
+		.contact-form-count-callout { display: inline; color: $d-grey; }
+		.contact-form-count-callout {
+			.contact-form-count-number { display: inline; color: #3ecb79; }
+		}
+	}
+
 }
 
 .middle { display: block; background-color: $red; height: 150px; }

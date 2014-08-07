@@ -44,6 +44,14 @@
   //editor style
   add_editor_style('assets/wp-admin/custom-editor-style.css');
 
+
+    add_action('frm_field_input_html', 'add_input_html');
+    function add_input_html($field){
+      if($field['id'] == 13){ //change 25 to the ID of your field
+         echo ' onkeyup="countChar(this)"';
+      }
+    }
+
   //login page style
   function WPS_loginCSS() {
 	   echo '<link rel="stylesheet" type="text/css" href="'.get_bloginfo('template_directory').'/assets/img/wp-login.css"/>';

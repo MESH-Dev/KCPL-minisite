@@ -9,12 +9,14 @@
         <div class="contact-form-body">
             <?php echo do_shortcode('[formidable id=2]'); ?>
         </div>
-
+        <div class="contact-form-count">
+            <span class="contact-form-count-callout">You are using <span class="contact-form-count-number" id="count"></span> <span class="contact-form-count-number">out of 300</span> characters.</span>
+        </div>
     </div>
 </div>
 
 <div class="middle section">
-    <span>Check out the reasons why others love the library
+    <span>Check out the reasons why others love the library</span>
 </div>
 
 <div class="container main-body">
