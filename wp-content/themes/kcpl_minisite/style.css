@@ -1387,6 +1387,7 @@ header .header-text .header-text-callout {
   line-height: 26px;
   font-weight: 700;
   color: white;
+  text-indent: -0.4em;
 }
 /* line 94, assets/sass/_layout.scss */
 .post-container .post .post-author {

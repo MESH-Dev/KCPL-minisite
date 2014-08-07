@@ -30,7 +30,7 @@
             <div class="four columns post-container">
                 <div class="post" style="background-color:<?php the_field('background_color') ?>">
                     <div class="post-content">
-                        <span><?php the_field('quote'); ?></span>
+                        <span>"<?php the_field('quote'); ?>"</span>
                     </div>
                 </div>
                 <div class="author">
