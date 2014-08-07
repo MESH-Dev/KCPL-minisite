@@ -6,16 +6,16 @@
 
 /* Header Styles
 ================================================== */
-header { background-color: #323333; height: 360px;}
+header { background: url("assets/img/header-bg.jpg"); background-size: cover; background-position: top center; height: 360px;}
 header {
 	.header-logo { display: block; }
 	.header-logo {
-		img { background-color: white; padding-top: 25px; }
+		img { background-color: white; padding: 25px 20px 20px; }
 	}
-	.header-text { display: block; padding-top: 25px; }
+	.header-text { display: block; background-color: #137cc1; margin: 85px 15px 0px; padding: 26px; }
 	.header-text {
-		.header-text-information { display: block; color: white; font-family: $minion; font-style: italic; font-size: 20px; line-height: 22px; font-weight: 700; }
-		.header-text-callout { display: block; color: white; font-family: $nimbus-c; text-transform: uppercase; font-weight: 700; }
+		.header-text-information { font-size: 22px; color: white; font-family: $minion; font-style: italic; line-height: 26px; font-weight: 700; letter-spacing: .02em; margin-bottom: 10px; }
+		.header-text-callout { display: block; color: white; font-family: $nimbus-c; text-transform: uppercase; font-weight: 700; font-size: 40px; line-height: 42px; }
 	}
 }
 

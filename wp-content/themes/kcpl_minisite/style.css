@@ -1140,7 +1140,9 @@ or wrap each row of columns in a <div class="row"> */
 ================================================== */
 /* line 9, assets/sass/_layout.scss */
 header {
-  background-color: #323333;
+  background: url("assets/img/header-bg.jpg");
+  background-size: cover;
+  background-position: top center;
   height: 360px;
 }
 
@@ -1151,22 +1153,25 @@ header .header-logo {
 /* line 13, assets/sass/_layout.scss */
 header .header-logo img {
   background-color: white;
-  padding-top: 25px;
+  padding: 25px 20px 20px;
 }
 /* line 15, assets/sass/_layout.scss */
 header .header-text {
   display: block;
-  padding-top: 25px;
+  background-color: #137cc1;
+  margin: 85px 15px 0px;
+  padding: 26px;
 }
 /* line 17, assets/sass/_layout.scss */
 header .header-text .header-text-information {
-  display: block;
+  font-size: 22px;
   color: white;
   font-family: "minion-pro";
   font-style: italic;
-  font-size: 20px;
-  line-height: 22px;
+  line-height: 26px;
   font-weight: 700;
+  letter-spacing: .02em;
+  margin-bottom: 10px;
 }
 /* line 18, assets/sass/_layout.scss */
 header .header-text .header-text-callout {
@@ -1175,6 +1180,8 @@ header .header-text .header-text-callout {
   font-family: "nimbus-sans-condensed";
   text-transform: uppercase;
   font-weight: 700;
+  font-size: 40px;
+  line-height: 42px;
 }
 
 /* Homepage Styles
