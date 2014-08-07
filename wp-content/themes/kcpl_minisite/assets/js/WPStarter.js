@@ -3,5 +3,8 @@ jQuery(document).ready(function($){
   console.log('hell yeah!');
 
   //Let's do something awesome!
-  
+
+  try{Typekit.load();}catch(e){}
+
+
 });
