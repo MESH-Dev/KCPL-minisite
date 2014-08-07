@@ -44,9 +44,12 @@ header {
 
 footer { display: block; height: 240px; background-color: #137cc1 }
 footer {
-	.footer-title { display: block; }
-	.footer-subtitle { display: block; }
-	.footer-url { display: block; }
+	.footer-text { display: block; top: 36%; position: relative; text-align:center; }
+	.footer-text {
+		.footer-title { display: block; font-family: $nimbus-c; font-weight: 700; font-size: 22px; line-height: 32px; color: $d-grey; text-transform: uppercase; }
+		.footer-subtitle { display: block; font-family: $minion; font-size: 18px; line-height: 18px; color: $d-grey; }
+		.footer-url { display: block; color: white; font-family: $nimbus; }
+	}
 }
 
 

@@ -1244,16 +1244,35 @@ footer {
 }
 
 /* line 47, assets/sass/_layout.scss */
-footer .footer-title {
+footer .footer-text {
   display: block;
-}
-/* line 48, assets/sass/_layout.scss */
-footer .footer-subtitle {
-  display: block;
+  top: 36%;
+  position: relative;
+  text-align: center;
 }
 /* line 49, assets/sass/_layout.scss */
-footer .footer-url {
+footer .footer-text .footer-title {
   display: block;
+  font-family: "nimbus-sans-condensed";
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 32px;
+  color: #323333;
+  text-transform: uppercase;
+}
+/* line 50, assets/sass/_layout.scss */
+footer .footer-text .footer-subtitle {
+  display: block;
+  font-family: "minion-pro";
+  font-size: 18px;
+  line-height: 18px;
+  color: #323333;
+}
+/* line 51, assets/sass/_layout.scss */
+footer .footer-text .footer-url {
+  display: block;
+  color: white;
+  font-family: "nimbus-sans";
 }
 
 /* Homepage Styles
