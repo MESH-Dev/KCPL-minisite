@@ -1218,6 +1218,15 @@ header .header-text .header-text-callout {
 /* line 37, assets/sass/_layout.scss */
 .middle span {
   display: block;
+  text-align: center;
+  top: 38%;
+  position: relative;
+  text-transform: uppercase;
+  font-family: "nimbus-sans-condensed";
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 42px;
+  color: white;
 }
 
 /* line 40, assets/sass/_layout.scss */

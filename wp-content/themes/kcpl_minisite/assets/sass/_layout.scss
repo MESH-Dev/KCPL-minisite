@@ -34,7 +34,7 @@ header {
 
 .middle { display: block; background-color: #f65446; height: 150px; }
 .middle {
-	span { display: block; }
+	span { display: block; text-align: center; top: 38%; position: relative; text-transform: uppercase; font-family: $nimbus-c; font-weight: 700; font-size: 40px; line-height: 42px; color: white;}
 }
 
 .post-content { display: block; }
