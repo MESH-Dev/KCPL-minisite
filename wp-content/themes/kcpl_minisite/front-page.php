@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-<div class="container">
+<div class="container section">
     <div class="contact-form">
         <div class="contact-form-header">
             <span class="title">Why do you love Kanawha County Library?</span>
@@ -13,11 +13,11 @@
     </div>
 </div>
 
-<div class="middle">
+<div class="middle section">
     <span>Check out the reasons why others love the library
 </div>
 
-<div class="container">
+<div class="container main-body">
 
     <?php $args = array('posts_per_page' => '-1');
           $the_query = new WP_Query( $args ); ?>
@@ -27,9 +27,18 @@
       <!-- the loop -->
       <?php while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
 
-       POSTINFO GOES HERE -the_title(), the_content(), custom fields etc
-
-        <div class="post-content"><?php the_content() ?></div>
+            <div class="four columns post-container">
+                <div class="post" style="background-color:<?php the_field('background_color') ?>">
+                    <div class="post-content">
+                        <span><?php the_field('quote'); ?></span>
+                    </div>
+                </div>
+                <div class="author">
+                    <div class="post-author">
+                        <span><?php the_title(); ?></span>
+                    </div>
+                </div>
+            </div>
 
       <?php endwhile; ?>
       <!-- end of the loop -->
@@ -39,7 +48,6 @@
     <?php else:  ?>
       <p><?php _e( 'Sorry, no posts.' ); ?></p>
     <?php endif; ?>
-
 
 </div>
 

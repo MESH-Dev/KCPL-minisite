@@ -3,6 +3,7 @@
   function WPS_scripts() {
   	wp_enqueue_style( 'WPS-script', get_template_directory_uri().'/style.css' );
   	wp_enqueue_script( 'script-name', get_template_directory_uri().'/assets/js/WPStarter.js', array('jquery'), '1.0.0', true );
+    wp_enqueue_script( 'masonry', get_template_directory_uri().'/assets/js/masonry.pkgd.min.js', array('jquery'), '1.0.0', true );
     wp_enqueue_script('typekit','//use.typekit.net/drm7klb.js');
     wp_enqueue_style('font-awesome',get_template_directory_uri().'/assets/libs/font-awesome-4.1.0/css/font-awesome.min.css');
   }

@@ -1,12 +1,15 @@
 
 /* Table of Content
-==================================================
+================================================== */
 
+.section {
+	margin-bottom: 30px;
+}
 
 
 /* Header Styles
 ================================================== */
-header { background: url("assets/img/header-bg.jpg"); background-size: cover; background-position: top center; height: 360px;}
+header { background: url("assets/img/header-bg.jpg"); background-size: cover; background-position: top center; height: 360px; margin-bottom: 30px;}
 header {
 	.header-logo { display: block; }
 	.header-logo {
@@ -37,7 +40,28 @@ header {
 	span { display: block; text-align: center; top: 38%; position: relative; text-transform: uppercase; font-family: $nimbus-c; font-weight: 700; font-size: 40px; line-height: 42px; color: white;}
 }
 
-.post-content { display: block; }
+.post-container { display: block; margin-bottom: 30px; }
+.post-container {
+	.post { display: block; border-top-left-radius: 10px; border-top-right-radius: 10px; padding: 20px; }
+	.post {
+		.post-content { display: block; }
+		.post-content {
+			span { display: block; font-family: $minion; font-style: italic; font-size: 24px; line-height: 26px; font-weight: 700; color: white; }
+		}
+		.post-author { display: block; }
+		.post-author {
+			span { display: block; }
+		}
+	}
+
+	.author { display: block; }
+	.author {
+		.post-author { display: block; }
+		.post-author {
+			span { display: block; background-color: $s-grey; border-bottom-left-radius: 10px; border-bottom-right-radius: 10px; padding: 20px; font-family: $nimbus-c; color: $d-grey; text-transform: uppercase; font-weight: 700; }
+		}
+	}
+}
 
 /* Footer Styles
 ================================================== */
