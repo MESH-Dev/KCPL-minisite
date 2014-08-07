@@ -1145,7 +1145,6 @@ header {
   background: url("assets/img/header-bg.jpg");
   background-size: cover;
   background-position: top center;
-  height: 360px;
   margin-bottom: 30px;
 }
 
@@ -1158,14 +1157,20 @@ header .header-logo img {
   background-color: white;
   padding: 25px 20px 20px;
 }
-/* line 18, assets/sass/_layout.scss */
+@media only screen and (max-width: 767px) {
+  /* line 20, assets/sass/_layout.scss */
+  header .header-logo {
+    text-align: center;
+  }
+}
+/* line 25, assets/sass/_layout.scss */
 header .header-text {
   display: block;
   background-color: #137cc1;
-  margin: 85px 15px 0px;
+  margin: 85px 15px 40px;
   padding: 26px;
 }
-/* line 20, assets/sass/_layout.scss */
+/* line 27, assets/sass/_layout.scss */
 header .header-text .header-text-information {
   font-size: 22px;
   color: white;
@@ -1176,7 +1181,7 @@ header .header-text .header-text-information {
   letter-spacing: .02em;
   margin-bottom: 10px;
 }
-/* line 21, assets/sass/_layout.scss */
+/* line 28, assets/sass/_layout.scss */
 header .header-text .header-text-callout {
   display: block;
   color: white;
@@ -1189,36 +1194,160 @@ header .header-text .header-text-callout {
 
 /* Homepage Styles
 ================================================== */
-/* line 28, assets/sass/_layout.scss */
+/* line 35, assets/sass/_layout.scss */
 .contact-form {
   display: block;
 }
 
-/* line 30, assets/sass/_layout.scss */
+/* line 37, assets/sass/_layout.scss */
 .contact-form .contact-form-header {
   display: block;
+  background-color: #f65446;
+  color: white;
+  padding: 10px 34px;
 }
-/* line 32, assets/sass/_layout.scss */
+/* line 39, assets/sass/_layout.scss */
 .contact-form .contact-form-header .contact-form-header-title {
   display: block;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-family: "nimbus-sans-condensed";
+  font-size: 22px;
+  line-height: 28px;
+  letter-spacing: 0.09em;
 }
-/* line 33, assets/sass/_layout.scss */
+/* line 40, assets/sass/_layout.scss */
 .contact-form .contact-form-header .contact-form-header-subtitle {
   display: block;
+  font-family: "minion-pro";
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 700;
 }
-/* line 35, assets/sass/_layout.scss */
+/* line 42, assets/sass/_layout.scss */
 .contact-form .contact-form-body {
   display: block;
+  background-color: #e2e2e2;
+  padding-top: 20px;
+}
+/* line 44, assets/sass/_layout.scss */
+.contact-form .contact-form-body .frm_forms.with_frm_style {
+  max-width: none;
+}
+/* line 45, assets/sass/_layout.scss */
+.contact-form .contact-form-body .with_frm_style .frm_form_field {
+  padding: 0px 20px;
+}
+/* line 46, assets/sass/_layout.scss */
+.contact-form .contact-form-body .with_frm_style .frm_top_container label.frm_primary_label {
+  display: none;
+}
+/* line 47, assets/sass/_layout.scss */
+.contact-form .contact-form-body .with_frm_style textarea, .contact-form .contact-form-body .with_frm_style input[type=text], .contact-form .contact-form-body .with_frm_style input[type=password], .contact-form .contact-form-body .with_frm_style input[type=email], .contact-form .contact-form-body .with_frm_style input[type=number], .contact-form .contact-form-body .with_frm_style input[type=url], .contact-form .contact-form-body .with_frm_style input[type=tel], .contact-form .contact-form-body .with_frm_style input[type=file], .contact-form .contact-form-body .with_frm_style select {
+  border: 3px solid #fff;
+  padding: 6px 8px;
+  font: 18px/24px "nimbus-sans", Helvetica, Arial, sans-serif;
+  max-width: 100%;
+  display: block;
+  background: #e2e2e2;
+  color: #323333;
+  margin: none;
+  overflow: hidden;
+  box-sizing: border-box;
+  width: 100%;
+}
+/* line 49, assets/sass/_layout.scss */
+.contact-form .contact-form-body .with_frm_style .frm_submit input[type=submit], .contact-form .contact-form-body .with_frm_style .frm_submit input[type=button], .contact-form .contact-form-body .frm_form_submit_style, .contact-form .contact-form-body .with_frm_style.frm_login_form input[type=submit] {
+  text-align: center;
+  padding: 3px 30px;
+  border: none;
+  color: #ffffff;
+  border-radius: .5em;
+  background: #f65446;
+  font-size: 18px;
+  font-family: "nimbus-sans-condensed";
+  text-transform: uppercase;
+  letter-spacing: 0.09em;
+  font-weight: 700;
+  letter-spacing: 0.07em;
+  float: right;
+  margin-right: 25px;
+}
+/* line 51, assets/sass/_layout.scss */
+.contact-form .contact-form-body .with_frm_style .frm_radio label, .contact-form .contact-form-body .with_frm_style .frm_checkbox label {
+  font-family: "nimbus-sans";
+  font-size: 10px;
+  line-height: 10px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+/* line 52, assets/sass/_layout.scss */
+.contact-form .contact-form-body .with_frm_style .frm_radio {
+  width: 80%;
+}
+/* line 54, assets/sass/_layout.scss */
+.contact-form .contact-form-body .with_frm_style p.submit, .contact-form .contact-form-body .with_frm_style div.frm_submit, .contact-form .contact-form-body .with_frm_style.frm_login_form p.login-submit {
+  position: relative;
+  float: right;
+}
+@media only screen and (min-width: 768px) {
+  /* line 58, assets/sass/_layout.scss */
+  .contact-form .contact-form-body .with_frm_style p.submit, .contact-form .contact-form-body .with_frm_style div.frm_submit, .contact-form .contact-form-body .with_frm_style.frm_login_form p.login-submit {
+    position: absolute;
+    right: 0;
+    bottom: 30px;
+  }
+  /* line 60, assets/sass/_layout.scss */
+  .contact-form .contact-form-body #field_7jwk25 {
+    width: 49%;
+  }
+  /* line 61, assets/sass/_layout.scss */
+  .contact-form .contact-form-body #field_axkmb8 {
+    width: 48%;
+    position: absolute;
+    left: 50%;
+    top: 90px;
+  }
+  /* line 62, assets/sass/_layout.scss */
+  .contact-form .contact-form-body #field_xs1dc8 {
+    width: 32%;
+  }
+  /* line 63, assets/sass/_layout.scss */
+  .contact-form .contact-form-body #field_2ceh3d {
+    width: 32%;
+    position: absolute;
+    left: 34%;
+    top: 152px;
+  }
+  /* line 64, assets/sass/_layout.scss */
+  .contact-form .contact-form-body #field_bcq4pz {
+    width: 31%;
+    position: absolute;
+    left: 67%;
+    top: 152px;
+  }
+}
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+  /* line 69, assets/sass/_layout.scss */
+  .contact-form .contact-form-body .frm_forms.with_frm_style {
+    height: 656px;
+  }
+}
+@media only screen and (max-width: 479px) {
+  /* line 75, assets/sass/_layout.scss */
+  .contact-form .contact-form-body .frm_forms.with_frm_style {
+    height: 670px;
+  }
 }
 
-/* line 38, assets/sass/_layout.scss */
+/* line 81, assets/sass/_layout.scss */
 .middle {
   display: block;
   background-color: #f65446;
   height: 150px;
 }
 
-/* line 40, assets/sass/_layout.scss */
+/* line 83, assets/sass/_layout.scss */
 .middle span {
   display: block;
   text-align: center;
@@ -1232,24 +1361,24 @@ header .header-text .header-text-callout {
   color: white;
 }
 
-/* line 43, assets/sass/_layout.scss */
+/* line 86, assets/sass/_layout.scss */
 .post-container {
   display: block;
   margin-bottom: 30px;
 }
 
-/* line 45, assets/sass/_layout.scss */
+/* line 88, assets/sass/_layout.scss */
 .post-container .post {
   display: block;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
   padding: 20px;
 }
-/* line 47, assets/sass/_layout.scss */
+/* line 90, assets/sass/_layout.scss */
 .post-container .post .post-content {
   display: block;
 }
-/* line 49, assets/sass/_layout.scss */
+/* line 92, assets/sass/_layout.scss */
 .post-container .post .post-content span {
   display: block;
   font-family: "minion-pro";
@@ -1259,23 +1388,23 @@ header .header-text .header-text-callout {
   font-weight: 700;
   color: white;
 }
-/* line 51, assets/sass/_layout.scss */
+/* line 94, assets/sass/_layout.scss */
 .post-container .post .post-author {
   display: block;
 }
-/* line 53, assets/sass/_layout.scss */
+/* line 96, assets/sass/_layout.scss */
 .post-container .post .post-author span {
   display: block;
 }
-/* line 57, assets/sass/_layout.scss */
+/* line 100, assets/sass/_layout.scss */
 .post-container .author {
   display: block;
 }
-/* line 59, assets/sass/_layout.scss */
+/* line 102, assets/sass/_layout.scss */
 .post-container .author .post-author {
   display: block;
 }
-/* line 61, assets/sass/_layout.scss */
+/* line 104, assets/sass/_layout.scss */
 .post-container .author .post-author span {
   display: block;
   background-color: #e2e2e2;
@@ -1290,21 +1419,21 @@ header .header-text .header-text-callout {
 
 /* Footer Styles
 ================================================== */
-/* line 69, assets/sass/_layout.scss */
+/* line 112, assets/sass/_layout.scss */
 footer {
   display: block;
   height: 240px;
   background-color: #137cc1;
 }
 
-/* line 71, assets/sass/_layout.scss */
+/* line 114, assets/sass/_layout.scss */
 footer .footer-text {
   display: block;
   top: 36%;
   position: relative;
   text-align: center;
 }
-/* line 73, assets/sass/_layout.scss */
+/* line 116, assets/sass/_layout.scss */
 footer .footer-text .footer-title {
   display: block;
   font-family: "nimbus-sans-condensed";
@@ -1314,7 +1443,7 @@ footer .footer-text .footer-title {
   color: #323333;
   text-transform: uppercase;
 }
-/* line 74, assets/sass/_layout.scss */
+/* line 117, assets/sass/_layout.scss */
 footer .footer-text .footer-subtitle {
   display: block;
   font-family: "minion-pro";
@@ -1322,7 +1451,7 @@ footer .footer-text .footer-subtitle {
   line-height: 18px;
   color: #323333;
 }
-/* line 75, assets/sass/_layout.scss */
+/* line 118, assets/sass/_layout.scss */
 footer .footer-text .footer-url {
   display: block;
   color: white;

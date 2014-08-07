@@ -9,13 +9,20 @@
 
 /* Header Styles
 ================================================== */
-header { background: url("assets/img/header-bg.jpg"); background-size: cover; background-position: top center; height: 360px; margin-bottom: 30px;}
+header { background: url("assets/img/header-bg.jpg"); background-size: cover; background-position: top center; margin-bottom: 30px;}
 header {
 	.header-logo { display: block; }
 	.header-logo {
 		img { background-color: white; padding: 25px 20px 20px; }
 	}
-	.header-text { display: block; background-color: #137cc1; margin: 85px 15px 0px; padding: 26px; }
+
+	@media only screen and (max-width: 767px) {
+		.header-logo {
+			text-align:center
+		}
+	}
+
+	.header-text { display: block; background-color: #137cc1; margin: 85px 15px 40px; padding: 26px; }
 	.header-text {
 		.header-text-information { font-size: 22px; color: white; font-family: $minion; font-style: italic; line-height: 26px; font-weight: 700; letter-spacing: .02em; margin-bottom: 10px; }
 		.header-text-callout { display: block; color: white; font-family: $nimbus-c; text-transform: uppercase; font-weight: 700; font-size: 40px; line-height: 42px; }
@@ -27,15 +34,51 @@ header {
 
 .contact-form { display: block; }
 .contact-form {
-	.contact-form-header { display: block; }
+	.contact-form-header { display: block; background-color: $red; color: white; padding: 10px 34px; }
 	.contact-form-header {
-		.contact-form-header-title { display: block; }
-		.contact-form-header-subtitle { display: block; }
+		.contact-form-header-title { display: block; text-transform: uppercase; font-weight: 700; font-family: $nimbus-c; font-size: 22px; line-height: 28px; letter-spacing: 0.09em; }
+		.contact-form-header-subtitle { display: block; font-family: $minion; font-size: 16px; line-height: 22px; font-weight: 700; }
 	}
-	.contact-form-body { display: block; }
+	.contact-form-body { display: block; background-color: $s-grey; padding-top: 20px; }
+	.contact-form-body {
+		.frm_forms.with_frm_style { max-width: none; }
+		.with_frm_style .frm_form_field { padding: 0px 20px; }
+		.with_frm_style .frm_top_container label.frm_primary_label { display: none; }
+		.with_frm_style textarea, .with_frm_style input[type=text], .with_frm_style input[type=password], .with_frm_style input[type=email], .with_frm_style input[type=number], .with_frm_style input[type=url], .with_frm_style input[type=tel], .with_frm_style input[type=file], .with_frm_style select { border: 3px solid #fff; padding: 6px 8px; font: 18px/24px $nimbus, Helvetica, Arial, sans-serif; max-width: 100%; display: block; background: #e2e2e2; color: #323333; margin: none; overflow: hidden; box-sizing:border-box; width: 100%; }
+
+		.with_frm_style .frm_submit input[type=submit], .with_frm_style .frm_submit input[type=button], .frm_form_submit_style, .with_frm_style.frm_login_form input[type=submit] { text-align: center; padding: 3px 30px; border: none; color: #ffffff; border-radius: .5em; background: $red; font-size: 18px;font-family: $nimbus-c; text-transform: uppercase; letter-spacing: 0.09em; font-weight: 700; letter-spacing: 0.07em; float: right; margin-right: 25px; }
+
+		.with_frm_style .frm_radio label, .with_frm_style .frm_checkbox label { font-family: $nimbus; font-size: 10px; line-height:10px; text-transform: uppercase; font-weight: 700; }
+		.with_frm_style .frm_radio { width: 80%; }
+
+		.with_frm_style p.submit, .with_frm_style div.frm_submit, .with_frm_style.frm_login_form p.login-submit { position: relative; float: right; }
+
+		@media only screen and (min-width: 768px) {
+
+			.with_frm_style p.submit, .with_frm_style div.frm_submit, .with_frm_style.frm_login_form p.login-submit { position: absolute; right: 0; bottom: 30px; }
+
+			#field_7jwk25 { width: 49%; }
+			#field_axkmb8 { width: 48%; position: absolute; left: 50%; top: 90px; }
+			#field_xs1dc8 { width: 32%; }
+			#field_2ceh3d { width: 32%; position: absolute; left: 34%; top: 152px; }
+			#field_bcq4pz { width: 31%; position: absolute; left: 67%; top: 152px; }
+		}
+
+		@media only screen and (min-width: 480px) and (max-width: 767px) {
+
+			.frm_forms.with_frm_style { height: 656px; }
+
+		}
+
+		@media only screen and (max-width: 479px) {
+
+			.frm_forms.with_frm_style { height: 670px; }
+
+		}
+	}
 }
 
-.middle { display: block; background-color: #f65446; height: 150px; }
+.middle { display: block; background-color: $red; height: 150px; }
 .middle {
 	span { display: block; text-align: center; top: 38%; position: relative; text-transform: uppercase; font-family: $nimbus-c; font-weight: 700; font-size: 40px; line-height: 42px; color: white;}
 }
