@@ -28,11 +28,6 @@
         }
     };
 
-    jQuery("#field_7jwk25").on("focus", function(){
-        jQuery("#field_7jwk25").val("");
-
-    });
-
     jQuery("#field_7jwk25").attr('placeholder', 'Name*');
     jQuery("#field_axkmb8").attr('placeholder', 'Email*');
     jQuery("#field_xs1dc8").attr('placeholder', 'Age');
