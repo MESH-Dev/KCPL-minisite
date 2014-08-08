@@ -52,6 +52,12 @@
       }
     }
 
+    add_action(‘frm_after_update_field’, ‘frm_trigger_entry_update’);
+    function frm_trigger_entry_update($atts){
+        $entry = FrmEntry::getOne($atts['entry_id']);
+        do_action(‘frm_after_update_entry’, $entry->id, $entry->form_id);
+    }
+
   //login page style
   function WPS_loginCSS() {
 	   echo '<link rel="stylesheet" type="text/css" href="'.get_bloginfo('template_directory').'/assets/img/wp-login.css"/>';

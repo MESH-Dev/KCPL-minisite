@@ -68,18 +68,18 @@ header {
 
 		@media only screen and (min-width: 480px) and (max-width: 767px) {
 
-			.frm_forms.with_frm_style { height: 656px; }
+			.frm_forms.with_frm_style { height: 680px; }
 
 		}
 
 		@media only screen and (max-width: 479px) {
 
-			.frm_forms.with_frm_style { height: 670px; }
+			.frm_forms.with_frm_style { height: 710px; }
 
 		}
 	}
 
-	.contact-form-count { display: block; display: block; position: absolute; bottom: 105px; left: 22px; font-size: 10px; text-transform: uppercase; font-weight: 700; font-family: $nimbus; line-height: 10px; }
+	.contact-form-count { display: block; position: absolute; bottom: 105px; left: 22px; font-size: 10px; text-transform: uppercase; font-weight: 700; font-family: $nimbus; line-height: 10px; }
 	.contact-form-count {
 		.contact-form-count-callout { display: inline; color: $d-grey; }
 		.contact-form-count-callout {
@@ -87,9 +87,22 @@ header {
 		}
 	}
 
+	@media only screen and (min-width: 480px) and (max-width: 767px) {
+		.contact-form-count { display: block; position: absolute; bottom: 212px; left: 22px; font-size: 10px; text-transform: uppercase; font-weight: 700; font-family: $nimbus; line-height: 10px; }
+	}
+
+	@media only screen and (max-width: 479px) {
+		.contact-form-count { display: block; position: absolute; bottom: 242px; left: 22px; font-size: 10px; text-transform: uppercase; font-weight: 700; font-family: $nimbus; line-height: 10px; }
+	}
+
 }
 
-.middle { display: block; background-color: $red; height: 150px; }
+.thank-you-form { display: block; height: 480px; background-color: $red; }
+.thank-you-form {
+	span { display: block; font: $minion; color: white; font-style: italic; font-weight: 700; text-align: center; top: 48%; position: relative; font-size: 24px; line-height: 26px; font-family: $minion; }
+}
+
+.middle { display: block; background-color: $red; padding: 70px; }
 .middle {
 	span { display: block; text-align: center; top: 38%; position: relative; text-transform: uppercase; font-family: $nimbus-c; font-weight: 700; font-size: 40px; line-height: 42px; color: white;}
 }
