@@ -33,7 +33,7 @@
     jQuery("#field_xs1dc8").attr('placeholder', 'Age');
     jQuery('#field_2ceh3d').attr('placeholder', 'Zip Code');
     jQuery('#field_bcq4pz').attr('placeholder', 'My Library Branch');
-    jQuery('#field_sp4rc3').attr('placeholder', 'My Library Story (MAX 300 CHARACTERS)');
+    jQuery('#field_sp4rc3').attr('placeholder', 'My Library Story (Max 300 characters)');
 
 </script>
 

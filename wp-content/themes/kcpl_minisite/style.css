@@ -1272,6 +1272,7 @@ header .header-text .header-text-callout {
   letter-spacing: 0.07em;
   float: right;
   margin-right: 25px;
+  box-shadow: none;
 }
 /* line 51, assets/sass/_layout.scss */
 .contact-form .contact-form-body .with_frm_style .frm_radio label, .contact-form .contact-form-body .with_frm_style .frm_checkbox label {
