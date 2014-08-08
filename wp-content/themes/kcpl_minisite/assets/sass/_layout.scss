@@ -57,7 +57,7 @@ header {
 
 		@media only screen and (min-width: 768px) {
 
-			.with_frm_style p.submit, .with_frm_style div.frm_submit, .with_frm_style.frm_login_form p.login-submit { position: absolute; right: 0; bottom: 30px; }
+			.with_frm_style p.submit, .with_frm_style div.frm_submit, .with_frm_style.frm_login_form p.login-submit { position: absolute; right: 0; bottom: 16px; }
 
 			#field_7jwk25 { width: 49%; }
 			#field_axkmb8 { width: 48%; position: absolute; left: 50%; top: 90px; }
@@ -68,13 +68,13 @@ header {
 
 		@media only screen and (min-width: 480px) and (max-width: 767px) {
 
-			.frm_forms.with_frm_style { height: 680px; }
+			.frm_forms.with_frm_style { height: 698px; }
 
 		}
 
 		@media only screen and (max-width: 479px) {
 
-			.frm_forms.with_frm_style { height: 710px; }
+			.frm_forms.with_frm_style { height: 735px; }
 
 		}
 	}
@@ -88,11 +88,11 @@ header {
 	}
 
 	@media only screen and (min-width: 480px) and (max-width: 767px) {
-		.contact-form-count { display: block; position: absolute; bottom: 212px; left: 22px; font-size: 10px; text-transform: uppercase; font-weight: 700; font-family: $nimbus; line-height: 10px; }
+		.contact-form-count { display: block; position: absolute; bottom: 228px; left: 22px; font-size: 10px; text-transform: uppercase; font-weight: 700; font-family: $nimbus; line-height: 10px; }
 	}
 
 	@media only screen and (max-width: 479px) {
-		.contact-form-count { display: block; position: absolute; bottom: 242px; left: 22px; font-size: 10px; text-transform: uppercase; font-weight: 700; font-family: $nimbus; line-height: 10px; }
+		.contact-form-count { display: block; position: absolute; bottom: 268px; left: 22px; font-size: 10px; text-transform: uppercase; font-weight: 700; font-family: $nimbus; line-height: 10px; }
 	}
 
 }
