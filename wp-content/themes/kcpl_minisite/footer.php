@@ -1,8 +1,8 @@
 <footer>
     <div class="footer-text">
-      <span class="footer-title">Thank you and some kind of take-away??</span>
-      <span class="footer-subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
-      <span class="footer-url">www.kanawhalibrary.org</span>
+      <span class="footer-title">Coming in October, a brand new Kanawha County Public Library website designed just for you!</span>
+      <span class="footer-subtitle">In the meantime, continue through to our current site.</span>
+      <span class="footer-url"><a href="http://kanawhalibrary.org">kanawhalibrary.org</a></span>
     </div>
 </footer>
 <?php wp_footer(); ?>

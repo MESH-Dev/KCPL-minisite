@@ -102,9 +102,10 @@ header {
 	span { display: block; font: $minion; color: white; font-style: italic; font-weight: 700; text-align: center; top: 48%; position: relative; font-size: 24px; line-height: 26px; font-family: $minion; }
 }
 
-.middle { display: block; background-color: $red; padding: 70px; }
+.middle { display: block; background-color: $red; padding: 70px 70px 17px; }
 .middle {
-	span { display: block; text-align: center; top: 38%; position: relative; text-transform: uppercase; font-family: $nimbus-c; font-weight: 700; font-size: 40px; line-height: 42px; color: white;}
+	.middle-text { display: block; text-align: center; position: relative; text-transform: uppercase; font-family: $nimbus-c; font-weight: 700; font-size: 40px; line-height: 42px; color: white;}
+	.middle-icon { display: block; text-align: center; padding-top: 17px; position: relative; text-transform: uppercase; font-family: $nimbus-c; font-weight: 700; font-size: 40px; line-height: 42px; color: white;}
 }
 
 .post-container { display: block; margin-bottom: 30px; }
@@ -137,9 +138,12 @@ footer { display: block; height: 240px; background-color: #137cc1 }
 footer {
 	.footer-text { display: block; top: 36%; position: relative; text-align:center; }
 	.footer-text {
-		.footer-title { display: block; font-family: $nimbus-c; font-weight: 700; font-size: 22px; line-height: 32px; color: $d-grey; text-transform: uppercase; }
-		.footer-subtitle { display: block; font-family: $minion; font-size: 18px; line-height: 18px; color: $d-grey; }
-		.footer-url { display: block; color: white; font-family: $nimbus; }
+		.footer-title { display: block; font-family: $nimbus-c; font-weight: 700; font-size: 22px; line-height:26px; color: $d-grey; text-transform: uppercase; margin: auto; width: 38%; }
+		.footer-subtitle { display: block; font-family: $minion; font-size: 18px; line-height: 20px; color: $d-grey; }
+		.footer-url { display: block; color: white; font-family: $nimbus; line-height: 20px; }
+		.footer-url {
+			a { color: white; }
+		}
 	}
 }
 

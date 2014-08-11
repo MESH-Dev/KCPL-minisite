@@ -7,7 +7,8 @@
 </div>
 
 <div class="middle section">
-    <span>Check out the reasons why others love the library</span>
+    <span class="middle-text">Check out the reasons why others love the library</span>
+    <span class="middle-icon"><i class="fa fa-angle-double-down"></i></span>
 </div>
 
 <div class="container main-body">
