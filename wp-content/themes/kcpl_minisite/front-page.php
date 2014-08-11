@@ -3,7 +3,7 @@
 <div class="container section">
     <div class="contact-form">
         <div class="contact-form-header">
-            <span class="contact-form-header-title">Why do you love Kanawha County Library?</span>
+            <span class="contact-form-header-title">Why do you love Kanawha County Public Library?</span>
             <span class="contact-form-header-subtitle">Please take a few minutes to share your story with us.</span>
         </div>
         <div class="contact-form-body">
