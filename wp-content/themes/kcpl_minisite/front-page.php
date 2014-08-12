@@ -12,6 +12,11 @@
         <div class="contact-form-count">
             <span class="contact-form-count-callout">You are using <span class="contact-form-count-number" id="count"></span> <span class="contact-form-count-number">out of 300</span> characters.</span>
         </div>
+
+        <div class="limit">
+            <span class="limit-content">Please revise your story to be 300 characters or less.</span>
+            <span class="limit-thank-you">Thank You.</span>
+        </div>
     </div>
 </div>
 

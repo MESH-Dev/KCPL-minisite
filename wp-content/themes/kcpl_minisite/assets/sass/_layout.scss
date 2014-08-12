@@ -79,7 +79,7 @@ header {
 		}
 	}
 
-	.contact-form-count { display: block; position: absolute; bottom: 127px; left: 22px; font-size: 10px; text-transform: uppercase; font-weight: 700; font-family: $nimbus; line-height: 10px; }
+	.contact-form-count { display: block; position: absolute; bottom: 128px; left: 22px; font-size: 10px; text-transform: uppercase; font-weight: 700; font-family: $nimbus; line-height: 10px; }
 	.contact-form-count {
 		.contact-form-count-callout { display: inline; color: $d-grey; }
 		.contact-form-count-callout {
@@ -131,6 +131,12 @@ header {
 	}
 }
 
+.limit { display: block; background-color: $blue; border-radius: 10px; padding: 14px; position: absolute; bottom: 56px; right: 28px; width: 277px; }
+.limit {
+	.limit-content { display: block; font-family: $nimbus; font-weight: 700; position: relative; font-size: 19px; line-height: 22px; text-transform: uppercase; color: white; }
+	.limit-thank-you { display: block; color: white; font-family: $minion; font-size: 15px; line-height: 17px; font-style: italic; }
+}
+
 /* Footer Styles
 ================================================== */
 
@@ -146,7 +152,6 @@ footer {
 		}
 	}
 }
-
 
 /* Homepage Styles
 ================================================== */
