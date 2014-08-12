@@ -89,6 +89,8 @@
             jQuery('input[type="submit"]').attr('disabled','disabled');
             jQuery('.limit').show();
         }else {
+            jQuery('.contact-form-count-number').css('color', '#3ecb79');
+            jQuery('#count').css('color', '#3ecb79');
             jQuery('#count').text(len);
             jQuery('input[type="submit"]').removeAttr('disabled');
             jQuery('.limit').hide();
