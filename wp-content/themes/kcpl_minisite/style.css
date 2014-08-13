@@ -1167,7 +1167,7 @@ header .header-logo img {
 header .header-text {
   display: block;
   background-color: #137cc1;
-  margin: 85px 15px 40px;
+  margin: 110px 15px 100px;
   padding: 26px;
 }
 /* line 27, assets/sass/_layout.scss */
@@ -1546,7 +1546,7 @@ header .header-text .header-text-callout {
 /* line 143, assets/sass/_layout.scss */
 footer {
   display: block;
-  height: 240px;
+  padding: 50px;
   background-color: #137cc1;
 }
 

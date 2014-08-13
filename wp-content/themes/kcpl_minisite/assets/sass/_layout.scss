@@ -22,7 +22,7 @@ header {
 		}
 	}
 
-	.header-text { display: block; background-color: #137cc1; margin: 85px 15px 40px; padding: 26px; }
+	.header-text { display: block; background-color: #137cc1; margin: 110px 15px 100px; padding: 26px; }
 	.header-text {
 		.header-text-information { font-size: 22px; color: white; font-family: $minion; font-style: italic; line-height: 26px; font-weight: 700; letter-spacing: .02em; margin-bottom: 10px; }
 		.header-text-callout { display: block; color: white; font-family: $nimbus-c; text-transform: uppercase; font-weight: 700; font-size: 40px; line-height: 42px; }
@@ -140,7 +140,7 @@ header {
 /* Footer Styles
 ================================================== */
 
-footer { display: block; height: 240px; background-color: #137cc1 }
+footer { display: block; padding: 50px; background-color: #137cc1 }
 footer {
 	.footer-text { display: block; top: 36%; position: relative; text-align:center; }
 	.footer-text {
