@@ -1,25 +1,5 @@
 <?php get_header(); ?>
 
-<div class="container section">
-    <div class="contact-form">
-        <div class="contact-form-header">
-            <span class="contact-form-header-title">Why do you love Kanawha County Public Library?</span>
-            <span class="contact-form-header-subtitle">Please take a few minutes to share your story with us.</span>
-        </div>
-        <div class="contact-form-body">
-            <?php echo do_shortcode('[formidable id=2]'); ?>
-        </div>
-        <div class="contact-form-count">
-            <span class="contact-form-count-callout">You are using <span class="contact-form-count-number" id="count"></span> <span class="contact-form-count-number">out of 300</span> characters.</span>
-        </div>
-
-        <div class="limit">
-            <span class="limit-content">Please revise your story to be 300 characters or less.</span>
-            <span class="limit-thank-you">Thank You.</span>
-        </div>
-    </div>
-</div>
-
 <div class="middle section">
     <span class="middle-text">Check out the reasons why others love the library</span>
     <span class="middle-icon"><i class="fa fa-angle-double-down"></i></span>
@@ -57,6 +37,26 @@
       <p><?php _e( 'Sorry, no posts.' ); ?></p>
     <?php endif; ?>
 
+</div>
+
+<div class="container section" id="tell-us">
+    <div class="contact-form">
+        <div class="contact-form-header">
+            <span class="contact-form-header-title">Why do you love Kanawha County Public Library?</span>
+            <span class="contact-form-header-subtitle">Please take a few minutes to share your story with us.</span>
+        </div>
+        <div class="contact-form-body">
+            <?php echo do_shortcode('[formidable id=2]'); ?>
+        </div>
+        <div class="contact-form-count">
+            <span class="contact-form-count-callout">You are using <span class="contact-form-count-number" id="count"></span> <span class="contact-form-count-number">out of 300</span> characters.</span>
+        </div>
+
+        <div class="limit">
+            <span class="limit-content">Please revise your story to be 300 characters or less.</span>
+            <span class="limit-thank-you">Thank You.</span>
+        </div>
+    </div>
 </div>
 
 <?php get_footer(); ?>

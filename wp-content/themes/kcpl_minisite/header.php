@@ -16,7 +16,7 @@
         <div class="seven columns offset-by-one">
             <div class="header-text">
                 <span class="header-text-information">For more than 100 years, Kanawha County Public Library has been providing vital library services to our community. We often hear stories from patrons about how the library impacts their life.</span>
-                <span class="header-text-callout">We want to hear your story too.</span>
+                <span class="header-text-callout"><a href="#tell-us">We want to hear your story too.</a></span>
             </div>
         </div>
     </div>

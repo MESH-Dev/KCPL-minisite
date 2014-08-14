@@ -6,10 +6,9 @@
 	margin-bottom: 30px;
 }
 
-
 /* Header Styles
 ================================================== */
-header { background: url("assets/img/header-bg.jpg"); background-size: cover; background-position: top center; margin-bottom: 30px;}
+header { background: url("assets/img/header-bg.jpg"); background-size: cover; background-position: top center;}
 header {
 	.header-logo { display: block; }
 	.header-logo {
@@ -24,6 +23,7 @@ header {
 
 	.header-text { display: block; background-color: #137cc1; margin: 110px 15px 100px; padding: 26px; }
 	.header-text {
+		a { color: white; }
 		.header-text-information { font-size: 22px; color: white; font-family: $minion; font-style: italic; line-height: 26px; font-weight: 700; letter-spacing: .02em; margin-bottom: 10px; }
 		.header-text-callout { display: block; color: white; font-family: $nimbus-c; text-transform: uppercase; font-weight: 700; font-size: 40px; line-height: 42px; }
 	}

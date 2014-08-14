@@ -1140,35 +1140,38 @@ or wrap each row of columns in a <div class="row"> */
 
 /* Header Styles
 ================================================== */
-/* line 12, assets/sass/_layout.scss */
+/* line 11, assets/sass/_layout.scss */
 header {
   background: url("assets/img/header-bg.jpg");
   background-size: cover;
   background-position: top center;
-  margin-bottom: 30px;
 }
 
-/* line 14, assets/sass/_layout.scss */
+/* line 13, assets/sass/_layout.scss */
 header .header-logo {
   display: block;
 }
-/* line 16, assets/sass/_layout.scss */
+/* line 15, assets/sass/_layout.scss */
 header .header-logo img {
   background-color: white;
   padding: 25px 20px 20px;
 }
 @media only screen and (max-width: 767px) {
-  /* line 20, assets/sass/_layout.scss */
+  /* line 19, assets/sass/_layout.scss */
   header .header-logo {
     text-align: center;
   }
 }
-/* line 25, assets/sass/_layout.scss */
+/* line 24, assets/sass/_layout.scss */
 header .header-text {
   display: block;
   background-color: #137cc1;
   margin: 110px 15px 100px;
   padding: 26px;
+}
+/* line 26, assets/sass/_layout.scss */
+header .header-text a {
+  color: white;
 }
 /* line 27, assets/sass/_layout.scss */
 header .header-text .header-text-information {
